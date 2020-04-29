@@ -41,4 +41,11 @@ public class InvalidTurnRestrictionTest
         this.verifier.actual(this.testCaseRule.getInvalidRelationAtlas(), testCheck);
         this.verifier.verifyNotEmpty();
     }
+
+    @Test
+    public void testMissingHighwayTagAtlas()
+    {
+        this.verifier.actual(this.testCaseRule.getMissingHighwayAtlas(), testCheck);
+        this.verifier.verifyNotEmpty();
+    }
 }
